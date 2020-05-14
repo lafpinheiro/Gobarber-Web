@@ -18,17 +18,21 @@ export const Container = styled.div<ContainerProps>`
   align-items: center;
 
   & + div {
-      margin-top: 8px;
+    margin-top: 8px;
   }
 
-  ${props => props.isFocused && css`
-    color: #ff9000;
-    border-color: #ff9000;
-  `}
+  ${(props) =>
+    props.isFocused &&
+    css`
+      color: #ff9000;
+      border-color: #ff9000;
+    `}
 
-  ${props => props.isFilled && css`
-    color: #ff9000;
-  `}
+  ${(props) =>
+    props.isFilled &&
+    css`
+      color: #ff9000;
+    `}
 
   input {
     flex: 1;
@@ -39,10 +43,9 @@ export const Container = styled.div<ContainerProps>`
     &::placeholder {
       color: #666360;
     }
-
   }
 
   svg {
-      margin-right: 16px;
+    margin-right: 16px;
   }
 `;

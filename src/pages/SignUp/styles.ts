@@ -44,7 +44,7 @@ export const Content = styled.div`
 
   > a {
     // sinal de maior indica que não deve afetar elementos mais internoss
-    color: #F4EDE8;
+    color: #f4ede8;
     display: block;
     margin-top: 24px;
     text-decoration: none;
