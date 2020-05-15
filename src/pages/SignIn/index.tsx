@@ -5,7 +5,7 @@ import { Form } from '@unform/web';
 import * as Yup from 'yup';
 
 import { useAuth } from '../../hooks/Auth';
-import { useToast } from '../../hooks/Toast';
+import { useToast } from '../../hooks/toast';
 
 import getValidationErrors from '../../utils/getValidationErrors';
 
@@ -47,7 +47,12 @@ const SignIn: React.FC = () => {
           formRef.current?.setErrors(errors);
         }
 
-        addToast();
+        addToast({
+          type: 'error',
+          title: 'Erro na autenticação',
+          description:
+            'Ocorreu um erro ao fazer login. Verifique as credenciais.',
+        });
       }
     },
     [signIn, addToast],
