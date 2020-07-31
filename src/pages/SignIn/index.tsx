@@ -55,8 +55,7 @@ const SignIn: React.FC = () => {
         addToast({
           type: 'error',
           title: 'Erro na autenticação',
-          description:
-            'Ocorreu um erro ao fazer login. Verifique as credenciais.',
+          description: `Ocorreu um erro ao fazer login. Verifique as credenciais. ${error.message}`,
         });
       }
     },
