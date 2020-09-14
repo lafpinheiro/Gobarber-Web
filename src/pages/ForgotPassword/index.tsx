@@ -21,6 +21,7 @@ interface ForgotPasswordFormData {
   email: string;
 }
 const ForgotPassword: React.FC = () => {
+/* eslint-disable-next-line @typescript-eslint/no-unused-vars */
   const [loading, setLoading] = useState(false);
   const formRef = useRef<FormHandles>(null);
 
